@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(198, 192, 170);
+}
+
+#title {
+    margin-top: 20px;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.container {
+    margin-top: 30px;
+    margin: 0 auto;
+    width: 40%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5%;
+    background-color: cornsilk;
+}
+
+#display {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-family: monospace;
+    text-shadow: 2px 2px 2px;
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 12px;
+    border-radius: 20%;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startBtn {
+    background-color: hsl(120, 100%, 25%);
+}
+
+#startBtn:hover {
+    background-color: hsl(120, 100%, 15%);
+}
+
+#stopBtn {
+    background-color: hsl(0, 100%, 50%);
+}
+
+#stopBtn:hover {
+    background-color: hsl(0, 100%, 40%);
+}
+
+#resetBtn {
+    background-color: hsl(240, 100%, 50%);
+}
+
+#resetBtn:hover {
+    background-color: hsl(240, 100%, 40%);
+}
+
+#lapBtn {
+    background-color: hsl(287, 100%, 50%);
+}
+
+#lapBtn:hover {
+    background-color: hsl(287, 100%, 40%);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+
+    #title {
+        font-size: 3rem;
+    }
+
+    #display {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #title {
+        font-size: 2.5rem;
+    }
+
+    #display {
+        font-size: 2rem;
+    }
+
+    .controls button {
+        font-size: 1.2rem;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    #display {
+        font-size: 1.5rem;
+    }
+
+    .controls button {
+        font-size: 1rem;
+        padding: 6px 8px;
+    }
+    #laps {
+        margin-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2 rem;
+    }
+    
+}
